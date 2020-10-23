@@ -1,5 +1,6 @@
 package io.yasmin.crypto.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
 
 @Getter
@@ -8,6 +9,10 @@ import lombok.*;
 @AllArgsConstructor
 @ToString
 public class Bpi {
-    private Money USD;
-    private Money BTC;
+//THE @JSONPROPERTY SCANS ALL THE DATA AND LOOKS FOR THE SPECIFIC PROPERTY THAT YOU PASS IN
+    @JsonProperty("USD")
+    private Money usd;
+
+    @JsonProperty("BTC")
+    private Money btc;
 }
