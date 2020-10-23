@@ -9,4 +9,5 @@ public class CoinDesk {
     private Time time;
     private String disclaimer;
     private Bpi bpi;
+    private final String yasObject = "yasminObject@" + System.currentTimeMillis();
 }
